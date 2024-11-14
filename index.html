@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gavisto - Mole Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="game-container">
+        <!-- Initial page with game instructions and start button -->
+        <div id="game-instructions">
+            <h1>Welcome to Gavisto</h1>
+            <p>You are Mole, an undercover informant. Answer carefully to avoid suspicion.</p>
+            <button id="start-button">Start Game</button>
+            
+            <!-- Characters with their descriptions -->
+            <div id="initial-character-container">
+                <div class="character-info">
+                    <img id="gustavo-initial" src="https://cdn.glitch.global/0398108f-efee-4634-a858-2488a76e1e42/Gustavo.jpg?v=1731505109241" alt="Gustavo" class="character">
+                    <p>Gustavo: The ruthless leader of the cartel.</p>
+                </div>
+                <div class="character-info">
+                    <img id="mole-initial" src="https://cdn.glitch.global/0398108f-efee-4634-a858-2488a76e1e42/Mole.jpg?v=1731505131798" alt="Mole" class="character">
+                    <p>Mole: An undercover informant working against the cartel.</p>
+                </div>
+                <div class="character-info">
+                    <img id="carlos-initial" src="https://cdn.glitch.global/0398108f-efee-4634-a858-2488a76e1e42/Carlos.png?v=1731505093825" alt="Carlos" class="character">
+                    <p>Carlos: A trusted enforcer in Gustavo's gang.</p>
+                </div>
+                <div class="character-info">
+                    <img id="maria-initial" src="https://cdn.glitch.global/0398108f-efee-4634-a858-2488a76e1e42/Maria.jpg?v=1731505121107images/Maria.jpg" alt="Maria" class="character">
+                    <p>Maria: Gustavo's sharp and calculating advisor.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Game content displayed after starting the game -->
+        <div id="game-content" class="hidden">
+            <div id="character-container" class="character-container-top">
+                <img id="gustavo" src="https://cdn.glitch.global/0398108f-efee-4634-a858-2488a76e1e42/Gustavo.jpg?v=1731505109241" alt="Gustavo" class="character hidden">
+                <img id="carlos" src="https://cdn.glitch.global/0398108f-efee-4634-a858-2488a76e1e42/Carlos.png?v=1731505093825" alt="Carlos" class="character hidden">
+                <img id="maria" src="https://cdn.glitch.global/0398108f-efee-4634-a858-2488a76e1e42/Maria.jpg?v=1731505121107" alt="Maria" class="character hidden">
+            </div>
+
+            <!-- Game text and choices -->
+            <div id="story-text-container">
+                <p id="story-text"></p>
+            </div>
+
+            <div id="choices"></div>
+            <p id="result-text"></p>
+
+            <button id="next-button" class="hidden">Next</button>
+        </div>
+
+        <!-- Game Over screen -->
+        <div id="game-over" class="hidden">
+            <h2>Game Over</h2>
+            <p id="game-result"></p>
+            <button id="restart-button">Restart</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
